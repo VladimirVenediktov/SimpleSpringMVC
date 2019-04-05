@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 // Объявить как контроллер
 public class HomeController {
 
-    @RequestMapping({"/", "/home"})
+    @RequestMapping("/home")
 // Обрабатывать запросы на получение главной страницы
     public String showHomePage(Map<String, Object> model) {
         model.put("name", "user"); //Добавить сообщения в модель
